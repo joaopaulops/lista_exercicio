@@ -1,6 +1,6 @@
 package org.listaalgoritmos.template;
 
-
+import java.util.Iterator;
 
 public class RespostaListaExercicio {
 	
@@ -34,7 +34,7 @@ public class RespostaListaExercicio {
 	 */
 	public static float calcularAreaTrapezio(float baseMaior, float baseMenor, float altura) 
 	{	
-		return 0f;
+		//return ((baseMaior + baseMenor ) * altura) / 2;
 	}
 	
 	/**
@@ -47,7 +47,15 @@ public class RespostaListaExercicio {
 	 */
 	public static int maiorEntreDoisInteiros(int a, int b) 
 	{
-		return 0;
+	
+		if( a > b ) {
+			
+		 return a;
+				
+		}else {
+		 
+		 return b;
+		}
 	}
 	
 	/**
@@ -59,7 +67,12 @@ public class RespostaListaExercicio {
 	 */
 	public static boolean verificarParImpar(int numero) 
 	{
-		return false;		
+		if (numero % 2 == 0) {
+		
+			return true;
+		}else{
+			return false;
+		}
 	}
 	
 	/**
@@ -69,7 +82,14 @@ public class RespostaListaExercicio {
 	 * @return media
 	 */
 	public static float calcularMediaNotas(float[] notas) {
-		return 0f;
+		
+		float sm = 0;
+		
+		for (double nun : notas) {
+            sm += nun;
+        }
+		return sm / notas.length;
+		
 	}
 	
 	/**
@@ -79,8 +99,9 @@ public class RespostaListaExercicio {
 	 * @param array
 	 */
 	public static void imprimirArrayInverso(int[] array)
-	{
-		System.out.print("");
+	{	
+		
+	    System.out.print("");
 	}
 	
 	/**
@@ -91,7 +112,9 @@ public class RespostaListaExercicio {
 	 */
 	public static void imprimirElementosPrimos(int[] array) 
 	{
-		System.out.print("");
+		
+	    
+	    System.out.print("");
 	}
 	
 	
@@ -138,7 +161,13 @@ public class RespostaListaExercicio {
 	 */
 	public static float calcularMediaAritmetica(int[] array) 
 	{
-		return 0f;
+		int sm = 0;
+		
+		for (int i = 0; i < array.length; i++) {
+            
+			sm += array[i];
+        }
+		return (float) sm / array.length;
 	}
 	
 }
