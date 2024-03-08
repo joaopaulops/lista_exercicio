@@ -34,7 +34,7 @@ public class RespostaListaExercicio {
 	 */
 	public static float calcularAreaTrapezio(float baseMaior, float baseMenor, float altura) 
 	{	
-		//return ((baseMaior + baseMenor ) * altura) / 2;
+		return ((baseMaior + baseMenor ) * altura) / 2;
 	}
 	
 	/**
@@ -167,6 +167,7 @@ public class RespostaListaExercicio {
             
 			sm += array[i];
         }
+		
 		return (float) sm / array.length;
 	}
 	
